@@ -1,0 +1,264 @@
+/*Google Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #f9ea8f;
+  background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:hover {
+  color: tomato;
+  font-weight: 600;
+}
+
+/*Navigation */
+.nav-link {
+  text-align: center;
+  display: block;
+  padding: 30px 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Video */
+.promo {
+  display: grid;
+  place-items: center;
+}
+
+#video {
+  width: 70%;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/*About Us Section */
+#about-us {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+/* Why Us Section */
+#why-us {
+  font-weight: 500;
+}
+
+.items {
+  text-align: center;
+}
+
+.card {
+  margin-top: 3em;
+  margin-left: 1.5em;
+  margin-bottom: 3em;
+}
+
+/* Media Query min 760px */
+@media (min-width: 769px) {
+  #header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+  }
+
+  #video {
+    height: 350px;
+  }
+
+  #why-us {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+  }
+
+  .items {
+    flex: 1 50%;
+    padding: 1em;
+  }
+
+  .card {
+    margin-top: 3em;
+    margin-left: 5em;
+    margin-bottom: 5em;
+  }
+}
+
+/* Media Query min 1025px */
+@media (min-width: 1025px) {
+  #why-us {
+    max-width: 1300px;
+  }
+
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1150px;
+  }
+
+  #video {
+    height: 450px;
+  }
+
+  .items {
+    flex-basis: 0;
+  }
+
+  #why-us {
+    margin-bottom: 30px;
+  }
+
+  .card {
+    margin-top: 3em;
+    margin-left: 10em;
+    margin-bottom: 3em;
+  }
+}
+
+/* Travel Cards- Products */
+#products {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  height: 30em;
+  width: 22em;
+}
+
+.card>img {
+  height: 10em;
+  width: 22em;
+  object-fit: cover;
+}
+
+.card-info {
+  margin-left: 1em;
+}
+
+h3 {
+  margin-top: 1em;
+}
+
+#guided {
+  background-color: pink;
+  display: inline-block;
+  padding: .5em;
+}
+
+#daytrip {
+  background-color: lightgreen;
+  display: inline-block;
+  padding: .5em;
+}
+
+#allday {
+  background-color: orange;
+  display: inline-block;
+  padding: .5em;
+}
+
+.icons span {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cost {
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+/* Form and submit button */
+#form {
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.form-info {
+  margin-top: 1em;
+  padding: .8em;
+  background-color: tomato;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#email {
+  width: 70%;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+#submit {
+  padding: .5em;
+  width: 60%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: white;
+  border: .5px solid #808080;
+  border-radius: 10px;
+  font-weight: 500;
+  opacity: .8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#submit:hover {
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* Footer */
+#social-icons {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.social-link {
+  font-size: 36px;
+}
